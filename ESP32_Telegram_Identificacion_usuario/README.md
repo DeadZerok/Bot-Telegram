@@ -17,12 +17,6 @@ Este ejemplo es ideal para desarrolladores que buscan iniciar proyectos de **aut
 * **Seguridad de Credenciales:** Separa las credenciales sensibles en un archivo `token.h` para evitar subirlas accidentalmente al repositorio.
 
 ---
-## 📦 Estructura de Archivos
-
-* `ESP32_Telegram_Identificacion.ino`: El **código principal** del firmware del ESP32, que maneja la comunicación con Telegram y el procesamiento de mensajes.
-* `token.h`: **¡Importante!** Este es un archivo local que contiene tus **credenciales Wi-Fi, el token de tu bot de Telegram y el ID del chat**. **NO se incluye en el repositorio público por razones de seguridad.**
-* `token_example.h`: Una plantilla que te muestra el formato esperado para el archivo `token.h`.
-
 
 ## 📦 Estructura de Archivos
 
@@ -46,13 +40,13 @@ Sigue estos pasos para poner en marcha tu bot de Telegram en el ESP32:
 
 **Gestor de Placas** del Arduino IDE:
     
-    esp32 de Espressif`
+    - esp32 de Espressif`
 
     
 **Gestor de Librerías** del Arduino IDE:
    
-    Arduinojson v5.13.5
-    CTBot
+    - Arduinojson  v5.13.5
+    - CTBot
 
 6.  **Sube al ESP32:** Selecciona tu placa ESP32 (por ejemplo, "ESP32 Dev Module" o "ESP32-C3 Dev Module") y el puerto COM correcto, luego compila y sube el código a tu ESP32.
 7.  **Prueba el Bot:** Abre el **Monitor Serial** en el Arduino IDE (asegúrate de que la velocidad de baudios sea 115200). Envía cualquier mensaje a tu bot de Telegram. Deberías ver el nombre, nombre de usuario e ID del remitente aparecer en el Monitor Serial.
